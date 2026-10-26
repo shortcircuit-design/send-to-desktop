@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Service
+MimeType=all/all;
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+Actions=sendToDesktop
+X-KDE-Priority=TopLevel
+
+[Desktop Action sendToDesktop]
+Name=Send to Desktop
+Icon=user-desktop
+Exec=/usr/bin/send-to-desktop %F
