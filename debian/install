@@ -1,0 +1,3 @@
+usr/bin/send-to-desktop usr/bin/
+usr/share/kio/servicemenus/send-to-desktop.desktop usr/share/kio/servicemenus/
+usr/share/nemo/actions/send-to-desktop.nemo_action usr/share/nemo/actions/
