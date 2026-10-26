@@ -1,0 +1,8 @@
+#!/usr/bin/make -f
+%:
+	dh $@
+
+override_dh_auto_install:
+	install -D -m 0755 usr/bin/send-to-desktop debian/tmp/usr/bin/send-to-desktop
+	install -D -m 0644 usr/share/kio/servicemenus/send-to-desktop.desktop debian/tmp/usr/share/kio/servicemenus/send-to-desktop.desktop
+	install -D -m 0644 usr/share/nemo/actions/send-to-desktop.nemo_action debian/tmp/usr/share/nemo/actions/send-to-desktop.nemo_action
