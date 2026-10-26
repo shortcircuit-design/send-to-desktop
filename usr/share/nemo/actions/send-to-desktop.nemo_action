@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Send to Desktop
+Comment=Create a desktop shortcut to the selected file or folder
+Exec=/usr/bin/send-to-desktop %F
+Icon-Name=user-desktop
+Selection=notnone
+Extensions=any;
+Quote=double
