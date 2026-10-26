@@ -1,0 +1,7 @@
+send-to-desktop (1.1.1-1) unstable; urgency=medium
+
+  * Initial Debian packaging for the community prototype.
+  * Add context-menu integration for Dolphin and Nemo.
+  * Create desktop launchers for selected local files and folders.
+
+ -- shortcircuit-design <130643942+shortcircuit-design@users.noreply.github.com>  Mon, 26 Oct 2026 10:00:00 +0300
