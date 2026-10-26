@@ -4,7 +4,16 @@ A small Linux file-manager integration that adds **Send to Desktop** to KDE Dolp
 
 ## Status
 
-**Community prototype — not officially accepted or reviewed by Linux Mint, Ubuntu, or Debian.** It has not yet been tested on a clean range of supported desktop environments. Please test it before relying on it.
+**Community prototype — not officially accepted or reviewed by Linux Mint, Ubuntu, or Debian.**
+
+### Testing so far
+
+- **KDE Dolphin:** The context-menu action has been tested by a user and reported to work successfully.
+- **Cinnamon Nemo:** Not yet tested.
+- **Clean-install/package lifecycle testing:** Not yet independently verified.
+- **Multiple selections, unusual filenames, and edge cases:** Still need systematic testing.
+
+Please test on your own system before relying on it, and report your distribution, desktop environment, and results.
 
 ## Features
 
@@ -47,7 +56,7 @@ Run the build command from the source tree. The resulting `.deb` is written to t
 ## Manual test checklist
 
 - [ ] Install on a clean Linux Mint system with Nemo.
-- [ ] Install on a KDE Plasma system with Dolphin.
+- [x] Basic KDE Dolphin context-menu action tested successfully by a user.
 - [ ] Create shortcuts for files and folders whose names contain spaces.
 - [ ] Select multiple items at once.
 - [ ] Repeat the action for an item with an existing shortcut name and confirm no file is overwritten.
