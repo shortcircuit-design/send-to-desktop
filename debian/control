@@ -1,0 +1,17 @@
+Source: send-to-desktop
+Section: utils
+Priority: optional
+Maintainer: shortcircuit-design <130643942+shortcircuit-design@users.noreply.github.com>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.7.0
+Rules-Requires-Root: no
+Homepage: https://github.com/shortcircuit-design/send-to-desktop
+
+Package: send-to-desktop
+Architecture: all
+Depends: ${misc:Depends}, python3, xdg-user-dirs, libglib2.0-bin
+Recommends: dolphin | nemo
+Description: Create desktop shortcuts from file manager context menus
+ Adds a Send to Desktop action to KDE Dolphin and Cinnamon's Nemo file
+ managers. Creates desktop launchers for selected local files and folders
+ without moving the original items.
