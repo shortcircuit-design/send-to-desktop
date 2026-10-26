@@ -10,7 +10,8 @@ A small Linux file-manager integration that adds **Send to Desktop** to KDE Dolp
 
 - **KDE Dolphin:** The context-menu action has been tested by a user and reported to work successfully.
 - **Cinnamon Nemo:** The context-menu action has also been tested by a user and reported to work successfully.
-- **Clean-install/package lifecycle testing:** Not yet independently verified.
+- **Debian package install/removal:** A user reports that installing and removing the provided `.deb` package works.
+- **Upgrade behavior and clean-install testing:** Not yet verified.
 - **Multiple selections, unusual filenames, and edge cases:** Still need systematic testing.
 
 Please test on your own system before relying on it, and report your distribution, desktop environment, and results.
@@ -42,6 +43,14 @@ sudo apt install ./send-to-desktop_1.1.1_all.deb
 
 Restart the file manager if the context-menu action does not appear immediately.
 
+## Remove
+
+```sh
+sudo apt remove send-to-desktop
+```
+
+This removes the installed package but normally leaves configuration or user-created desktop shortcuts in place.
+
 ## Build the Debian package
 
 On a Debian/Ubuntu/Linux Mint build system with `dpkg-buildpackage` and `debhelper` installed:
@@ -55,9 +64,10 @@ Run the build command from the source tree. The resulting `.deb` is written to t
 
 ## Manual test checklist
 
-- [ ] Install on a clean Linux Mint system and verify installation, upgrade, and removal.
+- [x] Install and remove the provided Debian package successfully (user-reported).
 - [x] Basic KDE Dolphin context-menu action tested successfully by a user.
 - [x] Basic Cinnamon Nemo context-menu action tested successfully by a user.
+- [ ] Test package upgrades and installation on a clean Linux Mint system.
 - [ ] Create shortcuts for files and folders whose names contain spaces.
 - [ ] Select multiple items at once.
 - [ ] Repeat the action for an item with an existing shortcut name and confirm no file is overwritten.
